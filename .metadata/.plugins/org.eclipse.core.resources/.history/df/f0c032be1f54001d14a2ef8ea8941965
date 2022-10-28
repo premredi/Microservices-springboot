@@ -1,0 +1,12 @@
+package com.Usmicrosemi.Vaccination.Service;
+
+import java.util.List;
+
+import com.Usmicrosemi.Vaccination.Model.VaccinationModel;
+
+public interface Service {
+	public Integer savevaccinedata(VaccinationModel model);
+	public VaccinationModel getbyid(Integer id);
+	public List<VaccinationModel> getalldata();
+
+}

@@ -1,0 +1,12 @@
+package com.Usmicrosemi.Covidcases.Model;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class Modelmapperconfig {
+	
+	public Modelmapper modelmapper() {
+		return new mod
+	}
+
+}

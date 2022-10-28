@@ -1,0 +1,11 @@
+package com.Usmicrosemi.Covidcases.ServiceImpl;
+
+public class NoCovidCaseException {
+	public NoCovidCaseException() {
+		
+	}
+	public NoCovidCaseException(String message) {
+		super();
+	}
+
+}

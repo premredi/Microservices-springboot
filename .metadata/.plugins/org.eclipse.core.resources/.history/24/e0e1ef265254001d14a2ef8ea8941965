@@ -1,0 +1,20 @@
+package com.Usmicrosemi.Covidcases.FeignClient;
+
+import java.util.List;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import com.Usmicrosemi.Covidcases.Model.Vaccination;
+
+@FeignClient(value="feigndemo",url="http://desktop-72lq3pv:9091/vaccine")
+public interface FeignInterface {
+	
+	@GetMapping("/get/{id}")
+	public ResponseEntity<Vaccination> getbyid(@PathVariable("id") Integer id);
+
+	@GetMapping("/findall")
+	public ResponseEntity<List<Vaccination>> getallpatients();
+}

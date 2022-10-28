@@ -1,0 +1,30 @@
+package com.Usmicrosemi.Covidcases.ServiceImpl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.Usmicrosemi.Covidcases.Entity.Covidcase;
+import com.Usmicrosemi.Covidcases.Model.CovidModel;
+import com.Usmicrosemi.Covidcases.Repository.CovidRepository;
+import com.Usmicrosemi.Covidcases.Service.CovidService;
+
+public class CovidImpl implements CovidService{
+
+	@Autowired
+ private CovidRepository repo;
+	@Override
+	public Integer addcoviddata(CovidModel model) {
+		Covidcase c=new Covidcase();
+		c.setName(model.getName());
+		c.setCity(model.getCity());
+		c.setPincode(model.getPincode());
+				
+		return repo.save(c).getId();
+	}
+
+	@Override
+	public CovidModel getcovidbtid(Integer id) {
+		
+		return null;
+	}
+
+}

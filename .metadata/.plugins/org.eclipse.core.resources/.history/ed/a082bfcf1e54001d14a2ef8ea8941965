@@ -1,0 +1,5 @@
+package com.Usmicrosemi.Vaccination.Entity;
+
+public class Vaccination {
+
+}

@@ -1,0 +1,5 @@
+package com.Usmicrosemi.Vaccination.Model;
+
+public class VaccinationModel {
+
+}

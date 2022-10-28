@@ -1,0 +1,5 @@
+package com.Usmicrosemi.Covidcases.Entity;
+
+public class Covidcase {
+
+}

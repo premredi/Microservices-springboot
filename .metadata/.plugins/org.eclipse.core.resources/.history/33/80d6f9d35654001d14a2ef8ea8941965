@@ -1,0 +1,25 @@
+package com.Usmicrosemi.Covidcases.FeignClient;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.Usmicrosemi.Covidcases.Repository.CovidRepository;
+
+@RestController
+public class FeignController {
+	
+	@Autowired
+	private FeignClient client;
+	
+	@Autowired
+	private CovidRepository repo;
+	
+	public String 
+	
+	
+	
+	
+	
+
+}

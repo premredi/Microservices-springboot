@@ -1,0 +1,5 @@
+package com.Usmicrosemi.Covidcases.Repository;
+
+public class CovidRepository {
+
+}

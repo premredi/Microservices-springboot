@@ -1,0 +1,13 @@
+server.port=9091
+spring.application.name=Gateway-API
+eureka.client.service-url.defaultZone=http://localhost:9090/eureka
+
+#gateway-api
+spring.cloud.gateway.discovery.locator.enabled=true
+
+
+#manually gateway-api
+spring.cloud.gateway.routes[0].id=covid
+spring.cloud.gateway.routes[0].uri=lb://Covid-cases
+spring.cloud.gateway.routes[0].predicates[0]=Path=/covid/save
+spring.cloud.gateway.routes[0].predicates[1]=Method=post

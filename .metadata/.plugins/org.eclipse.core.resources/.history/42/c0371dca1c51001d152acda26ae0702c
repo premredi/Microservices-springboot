@@ -1,0 +1,25 @@
+package com.Usmicrosemi.Covidcases.ServiceImpl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.Usmicrosemi.Covidcases.Model.CovidModel;
+import com.Usmicrosemi.Covidcases.Repository.CovidRepository;
+import com.Usmicrosemi.Covidcases.Service.CovidService;
+
+public class CovidImpl implements CovidService{
+
+	@Autowired
+ private	CovidRepository repo;
+	@Override
+	public Integer addcoviddata(CovidModel model) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public CovidModel getcovidbtid(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

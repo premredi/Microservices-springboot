@@ -1,0 +1,5 @@
+package com.Usmicrosemi.Vaccination.Repository;
+
+public class VaccinationRepo {
+
+}
